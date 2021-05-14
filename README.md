@@ -16,7 +16,7 @@
 
 ### Notices
 - 为了简化指令，可执行文件名为 tic 或 tic.exe ，代表 Typora Image Cleaner
-- 请正确放置可执行文件，或者修改代码中的路径，具体查看 imgCleaner.cpp
+- 请正确放置可执行文件，或者修改代码中的路径，具体查看 ImgCleaner.cpp
 - 删除文件会直接删除，不会移入回收站，建议熟悉功能前先保留副本
 - `imgPath/` 下文件检索并不是递归的，可以视情况改为 `recursive_directory_iterator` 递归查找文件
 - 需要 C++17 filesystem
