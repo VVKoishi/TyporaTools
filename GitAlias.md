@@ -10,6 +10,8 @@
 - `tps` 表示 Typora push ，下载并尝试合并，然后上传
 - `tp` 等同于 `tps`
 
+在使用 git pull 之前，请先设置远端仓库地址，我使用了 GitHub 的私有库，感谢微软。
+
 这些功能使用指令 alias 简化了一些 git 指令，但对于不能自动 merge 的修改，需要自行解决冲突。
 
 ## On Unix-like Systems 
