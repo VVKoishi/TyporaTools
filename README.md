@@ -1,13 +1,15 @@
-# TyporaTools
+# Typora Tools
 - Typora upload & download with git alias
 - Typora local image cleaner
 - Typora markdown archiver
 
-## TyporaGitAlias
+## Typora Git Alias
 使用 alias 的 git 指令，简化 Typora 仓库多端同步流程。
 [配置方法](./GitAlias.md)
 
-## TyporaImageCleaner
+
+
+## Typora Image Cleaner
 用于Typora或者文本类型的本地未使用图片清理工具。
 
 个人倾向于将图片保存在本地，以防止图片链接失效。经常写Typora会增删图片，而本地图片不会因为连接删除而被移除，日积月累会导致本地图片数量爆炸。为了可持续发展，开发了这个自用工具。
@@ -17,7 +19,7 @@
 tools/tic
 ```
 
-### Flows
+### Flow
 1. 遍历 `dirPath/` 中的所有 .md 文件
 2. 正则搜索和储存文本中所有的 `![](xxx.jpg)` 和 `<img src="xxx.png">` 图片名称引用到哈希表
 3. 清除 `imgPath/` 中不在哈希表记录的图片
@@ -31,7 +33,9 @@ tools/tic
 - `imgPath/` 下文件检索并不是递归的，可以视情况改为 `recursive_directory_iterator` 递归查找文件
 - 需要 C++17 filesystem
 
-## TyporaArchiver
+
+
+## Typora Archiver
 实现类似 `mv a.md archived/a.md` 的功能，但是支持同时移动文件所引用的图片，这样就不会导致引用缺失。
 
 因为归档功能对路径很敏感，所以很可能需要修改源码中的路径，具体查看 Archiver.cpp 中的参数。
@@ -41,7 +45,7 @@ tools/tic
 tools/ta a.md b.md c.md
 ```
 
-### Flows
+### Flow
 1. 检查 .md 文件是否存在
 2. 正则搜索和储存文本中所有的 `![](xxx.jpg)` 和 `<img src="xxx.png">` 图片名称引用到哈希表
 3. 移动所有 .md 到目标文件夹 `../archived/`
