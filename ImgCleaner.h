@@ -24,7 +24,7 @@ public:
 
 	const regex Pattern {"!\\[.*?\\]\\(.*?/(.*?)\\)|<img.*?src=\".*?/(.*?)\""};
 
-	// ִ执行清理
+	// 执行清理
 	void Run() {
 		try
 		{
