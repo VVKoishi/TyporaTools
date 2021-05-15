@@ -1,6 +1,11 @@
 # TyporaTools
+- Typora upload & download with git alias
 - Typora local image cleaner
 - Typora markdown archiver
+
+## TyporaGitAlias
+使用 alias 的 git 指令，简化 Typora 仓库多端同步流程。
+[配置方法](./GitAlias.md)
 
 ## TyporaImageCleaner
 用于Typora或者文本类型的本地未使用图片清理工具。
