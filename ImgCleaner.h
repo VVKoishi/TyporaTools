@@ -98,7 +98,7 @@ private:
 			{
 				++lineno;
 				smatch matches; // matched strings go here 
-				if (regex_search(line, matches, Pattern)) 
+				while (regex_search(line, matches, Pattern)) 
 				{
 					if (matches.size() > 1 && matches[1].matched)
 					{
@@ -110,6 +110,7 @@ private:
 						imgNameTable[matches[2]]++;
 						//cout << matches[2] << "\n";
 					}
+					line = matches.suffix().str();
 				}
 			}
 		}
