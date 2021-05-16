@@ -16,7 +16,7 @@
 
 ### Usage
 ```shell
-tools/tic
+tic
 ```
 
 ### Flow
@@ -42,7 +42,7 @@ tools/tic
 
 ### Usage
 ```shell
-tools/ta a.md b.md c.md
+ta ../a.md ../b.md ../c.md
 ```
 
 ### Flow
