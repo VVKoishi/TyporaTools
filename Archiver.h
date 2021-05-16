@@ -144,7 +144,7 @@ private:
 		// 移动 MD
 		for (const path& p : mdFilePaths)
 		{
-			path p2{ to.string() + p.string().erase(0, from.string().size()) };
+			path p2{ to.string() + p.string()/*.erase(0, from.string().size())*/ };
 			if (!is_regular_file(p)) continue;
 			cout << ">>>> Moving " << p << " to " << p2 << "\n";
 			if (copy_file(p, p2))
