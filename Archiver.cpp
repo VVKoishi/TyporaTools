@@ -1,16 +1,18 @@
 #include "Archiver.h"
 
 // Change to your path
-const path from = "../";
-const path to = "../archived/";
-// And default images path is "../assets/" , "../archived/assets/"
+const path from = "./";
+const path to = "./archived/";
+// And default images path is "./assets/" , "./archived/assets/"
 const path imgPath = "assets/";
 
 int main(int argc, const char* argv[]) {
+	
+	cout << "Current Path: " << current_path() << "\n";	
 
     if (argc < 2)
     {
-        cout << "Usage: ta a.md b.md c.md \n"
+        cout << "Usage: tools/ta a.md b.md c.md \n"
             << "From: " << from << "\n"
             << "To: " << to << "\n"
             << "You can change the paths setting in source code.\n";
