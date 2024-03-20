@@ -7,8 +7,8 @@ const path to = "./archived/";
 const path imgPath = "assets/";
 
 int main(int argc, const char* argv[]) {
-	
-	cout << "Current Path: " << current_path() << "\n";	
+
+    cout << "Current Path: " << current_path() << "\n";
 
     if (argc < 2)
     {
@@ -25,8 +25,8 @@ int main(int argc, const char* argv[]) {
         mdFileNames[i] = argv[i+1];
     }
 
-	Archiver a(mdFileNames, from, to, imgPath);
-	a.Run();
+    Archiver a(mdFileNames, from, to, imgPath);
+    a.Run();
 
-	return 0;
+    return 0;
 }
